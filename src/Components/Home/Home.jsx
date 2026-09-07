@@ -1,10 +1,16 @@
-import React from 'react'
-
+import Bhel from '../../assets/Bhel.jpg';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  let CardData = [
+    {
+      id: 1,
+      name: 'smomething',
+      image: Bhel,
+      price: 300,
+    },
+  ];
 
-export default Home
+  return <div>Home</div>;
+};
+
+export default Home;

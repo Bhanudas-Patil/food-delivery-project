@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import About from './Components/About/About'
 import Home from './Components/Home/Home'
