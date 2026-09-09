@@ -1,7 +1,9 @@
 .mainContainer {
   width: 100%;
   background: linear-gradient(135deg, #ff6b35, #ff914d);
-  box-shadow: 0 30px 10px whitesmoke;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
 }
 nav {
   max-width: 1200px;
