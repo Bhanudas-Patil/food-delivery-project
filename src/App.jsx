@@ -4,15 +4,18 @@ import Home from './Components/Home/Home'
 import Contact from './Components/Contact/Contact'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
+import { useState } from 'react'
 
 const App = () =>{
 
-    return(
+    let [cart, setCart] = useState([]);
 
+    return (
+        
         <BrowserRouter>
-        <Navbar/>
+            <Navbar cart={cart} setCart={setCart }/>
         <Routes>
-            <Route path='/' element={<Home/>}/>
+                <Route path='/' element={<Home cart={cart } setCart={setCart} />}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
         </Routes>

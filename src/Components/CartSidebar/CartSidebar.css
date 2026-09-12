@@ -1,0 +1,140 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: min(390px, 100vw);
+  height: 100vh;
+  padding: 24px;
+  overflow-y: auto;
+  color: #24201d;
+  background: #fffaf3;
+  box-shadow: -8px 0 24px rgba(48, 34, 20, 0.2);
+}
+
+.sidebar h2 {
+  margin: 8px 0 24px;
+  color: #30241d;
+  font-size: 1.6rem;
+}
+
+.closebtn {
+  float: right;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 6px;
+  color: #30241d;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  background: #f3dfc8;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eadaca;
+}
+
+.cartItem img {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cardDetails {
+  min-width: 0;
+}
+
+.cardDetails p {
+  margin: 4px 0;
+}
+
+.cardDetails p:first-child {
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardDetails p:last-child {
+  color: #b64b18;
+  font-weight: 600;
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-column: 2 / 3;
+}
+
+.qtyControls button {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d8b999;
+  border-radius: 5px;
+  color: #7c3516;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.qtyControls button:hover {
+  background: #f7dfc6;
+}
+
+.qtyControls span {
+  min-width: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.removeBtn {
+  grid-column: 3 / 4;
+  grid-row: 2;
+  padding: 0;
+  border: 0;
+  color: #b33b2e;
+  background: transparent;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  text-decoration: underline;
+}
+
+.total {
+  margin: 24px 0 14px;
+  color: #30241d;
+  font-size: 1.15rem;
+}
+
+.orderbtn {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  background: #e86f24;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.orderbtn:hover {
+  background: #c95414;
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 20px 16px;
+  }
+}
